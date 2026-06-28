@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "General Info: inst-comp-eeg",
+  "description": "This EEG dataset comprises neuroimaging recordings from participants performing an instruction-following task combined with a localizer task. The main task required participants to integrate or selectively attend to visual stimuli based on sequentially presented instructions specifying attention allocation, stimulus category, relevant features (color or shape), and motor response mappings. The dataset includes 16 blocks of the main task (512 trials total) and 8 blocks of a 1-back localizer task (320 trials), with full counterbalancing of experimental conditions across a single session per participant.",
+  "methods_description": "EEG data were recorded during two tasks: (1) an instruction-following task with sequential instruction screens (200 ms display, 800 ms inter-screen interval) followed by target image presentation (200 ms), requiring binary responses via keypress; (2) a 1-back localizer task with single target images per trial. Participants completed 16 counterbalanced blocks of the main task and 8 blocks of the localizer task in a single session. Catch trials were included to monitor sustained attention.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,12 +20,27 @@
       "orcid": "0000-0003-1733-5715"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005960.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "attention"
+    },
+    {
+      "term": "visual perception"
+    },
+    {
+      "term": "instruction following"
+    },
+    {
+      "term": "cognitive control"
+    },
+    {
+      "term": "event-related potentials"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1523/JNEUROSCI.1964-24.2025",
       "identifier_type": "DOI",
@@ -38,6 +55,11 @@
       "identifier": "https://nemar.org/dataset/on005960",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005960.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -74,61 +96,19 @@
       "award_number": "UCE-PP2023-11"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "61.9 GB (42 files)"
   ],
   "formats": [
     ".json",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This EEG dataset comprises neuroimaging recordings from participants performing an instruction-following task and a complementary 1-back localizer task. The instruction-following task required participants to integrate or selectively attend to visual stimuli based on sequentially presented instructions specifying attention allocation, stimulus category, relevant features (color or shape), and motor response mappings. The dataset includes 16 blocks of the main task (512 trials total) and 8 blocks of the localizer task (320 trials), with fully counterbalanced trial conditions and catch trials to ensure sustained attention.",
-  "methods_description": "EEG data were recorded during two tasks in a single session. The main instruction-following task presented four sequential instruction screens (200 ms display, 800 ms inter-screen interval) followed by target images (200 ms) requiring binary responses. The localizer task was a 1-back paradigm with single images per trial. Participants responded using key presses ('A' or 'L'). Main task blocks (n=16, 32 trials each) and localizer blocks (n=8, 40 trials each) were counterbalanced across the session.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "instruction following"
-    },
-    {
-      "term": "visual attention"
-    },
-    {
-      "term": "selective attention"
-    },
-    {
-      "term": "cognitive control"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "1-back task"
-    },
-    {
-      "term": "localizer task"
-    },
-    {
-      "term": "response mapping"
-    },
-    {
-      "term": "instruction integration"
-    },
-    {
-      "term": "catch trials"
-    },
-    {
-      "term": "counterbalancing"
-    },
-    {
-      "term": "animate/inanimate images"
-    }
-  ],
-  "source_hash": "793541bef708347814570fc1c28a17f9325d3c645bf7ac8e51944d29d9b99b64"
+  "source_hash": "41c8eaf87ec1f936324b24be732e1ae2f36c253a4507f4bc5b083dc89aeacea2"
 }
