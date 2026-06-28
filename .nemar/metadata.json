@@ -1,35 +1,134 @@
 {
   "version": "2.0",
-  "dataset_id": "on005960",
-  "source": "openneuro",
-  "source_id": "ds005960",
+  "pipeline_stage": "enriched",
   "title": "General Info: inst-comp-eeg",
-  "authors": {
-    "Pena, P.": {},
-    "Palenciano, A.F.": {},
-    "González-García, C.": {},
-    "Ruz, M.": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Pena, P.": {
+      "orcid": "0009-0007-8182-1503"
+    },
+    "Palenciano, A.F.": {
+      "orcid": "0000-0002-9963-7524"
+    },
+    "González-García, C.": {
+      "orcid": "0000-0001-6627-5777"
+    },
+    "Ruz, M.": {
+      "orcid": "0000-0003-1733-5715"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005960.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.1964-24.2025",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005960",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005960",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "v1.2.1",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was supported by grant PID2022-138940NB-100 awarded to MR and grant PID2023-151911NA-I00 awarded to AFP, funded by MCIN/EI/10.13039/501100011033/ and FEDER, UE. PP was supported by scholarship PREP2023-002013 funded by MCIN/AEI/10.13039/501100011033 and FSE+. AFP was supported by Grant PAIDI21_00207 of the Andalusian Autonomic Government. CCGP was supported by Project PID2020-116342GA-I00 funded by MCIN/AEI/10.13039/501100011033, and Grant RYC2021-033536-I funded by MCIN/AEI/10.13039/501100011033 and by the European Union NextGeneration EU/PRTR. The Mind, Brain and Behavior Research Center receives funding from grants CEX2023-001312-M by MCIN/AEI /10.13039/501100011033 and UCE-PP2023-11 by the University of Granada."
+      "funder_name": "MCIN/AEI",
+      "award_number": "PID2022-138940NB-100"
+    },
+    {
+      "funder_name": "MCIN/AEI",
+      "award_number": "PID2023-151911NA-I00"
+    },
+    {
+      "funder_name": "MCIN/AEI",
+      "award_number": "PREP2023-002013"
+    },
+    {
+      "funder_name": "Andalusian Autonomic Government",
+      "award_number": "PAIDI21_00207"
+    },
+    {
+      "funder_name": "MCIN/AEI",
+      "award_number": "PID2020-116342GA-I00"
+    },
+    {
+      "funder_name": "MCIN/AEI",
+      "award_number": "RYC2021-033536-I"
+    },
+    {
+      "funder_name": "MCIN/AEI",
+      "award_number": "CEX2023-001312-M"
+    },
+    {
+      "funder_name": "University of Granada",
+      "award_number": "UCE-PP2023-11"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This EEG dataset comprises neuroimaging recordings from participants performing an instruction-following task and a complementary 1-back localizer task. The instruction-following task required participants to integrate or selectively attend to visual stimuli based on sequentially presented instructions specifying attention allocation, stimulus category, relevant features (color or shape), and motor response mappings. The dataset includes 16 blocks of the main task (512 trials total) and 8 blocks of the localizer task (320 trials), with fully counterbalanced trial conditions and catch trials to ensure sustained attention.",
+  "methods_description": "EEG data were recorded during two tasks in a single session. The main instruction-following task presented four sequential instruction screens (200 ms display, 800 ms inter-screen interval) followed by target images (200 ms) requiring binary responses. The localizer task was a 1-back paradigm with single images per trial. Participants responded using key presses ('A' or 'L'). Main task blocks (n=16, 32 trials each) and localizer blocks (n=8, 40 trials each) were counterbalanced across the session.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "instruction following"
+    },
+    {
+      "term": "visual attention"
+    },
+    {
+      "term": "selective attention"
+    },
+    {
+      "term": "cognitive control"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "1-back task"
+    },
+    {
+      "term": "localizer task"
+    },
+    {
+      "term": "response mapping"
+    },
+    {
+      "term": "instruction integration"
+    },
+    {
+      "term": "catch trials"
+    },
+    {
+      "term": "counterbalancing"
+    },
+    {
+      "term": "animate/inanimate images"
+    }
+  ],
+  "source_hash": "793541bef708347814570fc1c28a17f9325d3c645bf7ac8e51944d29d9b99b64"
 }
