@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "General Info: inst-comp-eeg",
-  "description": "This EEG dataset comprises neuroimaging recordings from participants performing an instruction-following task combined with a localizer task. The main task required participants to integrate or selectively attend to visual stimuli based on sequentially presented instructions specifying attention allocation, stimulus category, relevant features (color or shape), and motor response mappings. The dataset includes 16 blocks of the main task (512 trials total) and 8 blocks of a 1-back localizer task (320 trials), with full counterbalancing of experimental conditions across a single session per participant.",
-  "methods_description": "EEG data were recorded during two tasks: (1) an instruction-following task with sequential instruction screens (200 ms display, 800 ms inter-screen interval) followed by target image presentation (200 ms), requiring binary responses via keypress; (2) a 1-back localizer task with single target images per trial. Participants completed 16 counterbalanced blocks of the main task and 8 blocks of the localizer task in a single session. Catch trials were included to monitor sustained attention.",
+  "description": "This dataset contains EEG recordings from participants performing a novel instruction-following task and an accompanying 1-back localizer task, designed to investigate how complex task instructions are represented and implemented in the brain. Each participant completed a single session including 16 blocks of the main instruction-following task, requiring integration or selection of visual features across sequential instruction screens, and 8 blocks of a localizer task. The dataset is intended to support research on instruction-based cognitive control and rule representation.",
+  "methods_description": "Participants completed a main instruction-following task in which four sequential instruction screens (200 ms display, 800 ms interscreen interval) informed attention allocation (integration vs. selection), relevant stimulus category, relevant feature (color or shape), and response mapping, followed by target images (200 ms) framed by colored shapes. Catch trials required a dual keypress response. A separate 1-back localizer task presented one image per trial, requiring participants to judge subcategory repetition via keypress. The main task consisted of 16 blocks of 32 trials each, and the localizer task consisted of 8 blocks of 40 trials, with block order counterbalanced across the session. EEG data were recorded during these tasks and organized using bids-matlab-tools.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,26 +25,26 @@
       "term": "EEG"
     },
     {
-      "term": "attention"
-    },
-    {
-      "term": "visual perception"
-    },
-    {
       "term": "instruction following"
     },
     {
       "term": "cognitive control"
     },
     {
-      "term": "event-related potentials"
+      "term": "task rules"
+    },
+    {
+      "term": "localizer task"
+    },
+    {
+      "term": "visual attention"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1523/JNEUROSCI.1964-24.2025",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on005960",
@@ -64,11 +64,11 @@
   ],
   "funding_references": [
     {
-      "funder_name": "MCIN/AEI",
+      "funder_name": "MCIN/EI",
       "award_number": "PID2022-138940NB-100"
     },
     {
-      "funder_name": "MCIN/AEI",
+      "funder_name": "MCIN/EI",
       "award_number": "PID2023-151911NA-I00"
     },
     {
