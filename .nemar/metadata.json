@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "General Info: inst-comp-eeg",
-  "description": "This dataset contains EEG recordings from participants performing a novel instruction-following task and an accompanying 1-back localizer task, designed to investigate how complex task instructions are represented and implemented in the brain. Each participant completed a single session including 16 blocks of the main instruction-following task, requiring integration or selection of visual features across sequential instruction screens, and 8 blocks of a localizer task. The dataset is intended to support research on instruction-based cognitive control and rule representation.",
-  "methods_description": "Participants completed a main instruction-following task in which four sequential instruction screens (200 ms display, 800 ms interscreen interval) informed attention allocation (integration vs. selection), relevant stimulus category, relevant feature (color or shape), and response mapping, followed by target images (200 ms) framed by colored shapes. Catch trials required a dual keypress response. A separate 1-back localizer task presented one image per trial, requiring participants to judge subcategory repetition via keypress. The main task consisted of 16 blocks of 32 trials each, and the localizer task consisted of 8 blocks of 40 trials, with block order counterbalanced across the session. EEG data were recorded during these tasks and organized using bids-matlab-tools.",
+  "description": "EEG dataset from an instruction-following study in which participants received novel verbal instructions combining integration or selection of animate and inanimate images, a relevant feature (color or shape), and a response key. Each participant completed a main instruction-following task and a 1-back localizer task in a single session. The dataset supports investigation of neural representations of novel instructions.",
+  "methods_description": "Each participant was recorded in one session. In the main task, four sequential instruction screens (200 ms display, 800 ms interscreen interval) were followed by a pretarget interval and target images (200 ms). Participants judged whether the targets fulfilled the instruction. Catch trials were included. The main task had 16 blocks of 32 trials with fully counterbalanced conditions. The localizer was a 1-back subcategory task with 8 blocks of 40 trials. Block order was counterbalanced.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,23 +28,23 @@
       "term": "instruction following"
     },
     {
+      "term": "task preparation"
+    },
+    {
+      "term": "verbal instructions"
+    },
+    {
       "term": "cognitive control"
     },
     {
-      "term": "task rules"
-    },
-    {
-      "term": "localizer task"
-    },
-    {
-      "term": "visual attention"
+      "term": "1-back localizer"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1523/JNEUROSCI.1964-24.2025",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on005960",
@@ -64,11 +64,11 @@
   ],
   "funding_references": [
     {
-      "funder_name": "MCIN/EI",
+      "funder_name": "MCIN/AEI",
       "award_number": "PID2022-138940NB-100"
     },
     {
-      "funder_name": "MCIN/EI",
+      "funder_name": "MCIN/AEI",
       "award_number": "PID2023-151911NA-I00"
     },
     {
@@ -101,7 +101,7 @@
     "eeg"
   ],
   "sizes": [
-    "61.9 GB (42 files)"
+    "57.68 GB (42 files)"
   ],
   "formats": [
     ".json",
